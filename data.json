@@ -1,0 +1,24 @@
+{
+  "josemon": {
+    "punches": 10,
+    "kicks": 12,
+    "blocks": 9,
+    "strikes": 10,
+    "katas": 14,
+    "stances": 10,
+    "fighting": 15,
+    "theory": 13,
+    "remarks": "Excellent performance, especially in fighting and katas. Keep working on block techniques."
+  },
+  "bob": {
+    "punches": 9,
+    "kicks": 10,
+    "blocks": 8,
+    "strikes": 9,
+    "katas": 12,
+    "stances": 9,
+    "fighting": 13,
+    "theory": 11,
+    "remarks": "Good overall, but needs improvement in blocks and theory understanding."
+  }
+}

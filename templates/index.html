@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Karate Test Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Oswald', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      width: 50px;
+      height: auto;
+      margin-right: 15px;
+    }
+
+    h1, h2 {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #000;
+      margin: 10px 0 0;
+      text-align: center;
+      text-shadow: 1px 1px #eee;
+    }
+
+    h2 {
+      font-size: 1em;
+      color: #000;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      border: 2px solid #d32f2f;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    label {
+      font-size: 1em;
+      display: block;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    input[type="text"] {
+      padding: 12px;
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      background-color: #fafafa;
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #d32f2f;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s, box-shadow 0.3s;
+    }
+
+    button:hover {
+      background-color: #b71c1c;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px 2px rgba(211, 47, 47, 0.5);
+    }
+
+    .result {
+      margin-top: 25px;
+      font-size: 1.1em;
+      padding: 20px;
+      border-radius: 15px;
+      animation: fadeIn 1.5s ease-in-out;
+      background-color: #fff;
+      color: #333;
+      border: 2px solid #d32f2f;
+      box-shadow: 0 0 12px 2px rgba(211, 47, 47, 0.15);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .result ul {
+      padding: 0;
+      list-style: none;
+      margin-top: 15px;
+    }
+
+    .result li {
+      margin: 8px 0;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 4px;
+    }
+
+    .not-found {
+      background-color: #fff0f0;
+      color: #b71c1c;
+      border: 2px solid #ff4444;
+      box-shadow: 0 0 12px 2px rgba(255, 68, 68, 0.2);
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 0.9em;
+      }
+
+      .result {
+        font-size: 1em;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="{{ url_for('static', filename='images/LOGO.png') }}" alt="Logo" class="logo">
+  <h1>Karate Test Results</h1>
+  <h2>Okinavan Shito Ryu Karate Do India</h2>
+
+  <form method="post">
+    <label for="name">Enter Your Name:</label>
+    <input type="text" name="name" id="name" required>
+    <button type="submit">Get Result</button>
+  </form>
+
+  {% if result %}
+    {% if result.name %}
+      <div class="result">
+        <h3>{{ result.name }}'s Scores:</h3>
+      <ul>
+  {% for category, marks in result.categories.items() %}
+    {% if category != 'remarks' %}
+      <li><strong>{{ category.title() }}:</strong> {{ marks }}</li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<p style="margin-top: 15px; font-size: 1.2em; color: #d32f2f; font-weight: bold; text-align: center;">
+  Total Marks: {{ result.total }}
+</p>
+
+{% if result.categories.remarks %}
+  <p><strong>Remarks:</strong> {{ result.categories.remarks }}</p>
+{% endif %}
+
+      </div>
+    {% else %}
+      <div class="result not-found">
+        {{ result }}
+      </div>
+    {% endif %}
+  {% endif %}
+
+  <footer style="margin-top: 30px; text-align: center; font-size: 0.9em; color: #777;">
+    <p>&copy; 2025 Okinavan Shito Ryu Karate Do India. All rights reserved.</p>
+  </footer>
+</body>
+</html>
