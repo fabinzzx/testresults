@@ -1,14 +1,20 @@
 from flask import Flask, render_template, request
 import json
+import os
 
 app = Flask(__name__)
+
+# Ensuring the data.json file exists
+DATA_FILE = "data.json"
+if not os.path.exists(DATA_FILE):
+    raise FileNotFoundError(f"{DATA_FILE} not found. Please ensure the data file is present.")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
     result = None
 
     # Reload JSON data every time
-    with open("data.json", "r") as file:
+    with open(DATA_FILE, "r") as file:
         results = json.load(file)
 
     if request.method == "POST":
@@ -25,3 +31,9 @@ def index():
             result = "Name not found. Please check spelling or contact your instructor."
 
     return render_template("index.html", result=result)
+
+# The serverless handler for Vercel
+def handler(event, context):
+    with app.app_context():
+        return app.full_dispatch_request()
+
