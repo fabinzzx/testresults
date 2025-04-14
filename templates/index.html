@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Karate Test Results</title>
+  <title>Colour Belt Test Results</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
@@ -149,7 +149,7 @@
 </head>
 <body>
   <img src="{{ url_for('static', filename='images/LOGO.png') }}" alt="Logo" class="logo">
-  <h1>Karate Test Results</h1>
+  <h1>Colour Belt Test Results (08/04/2025)</h1>
   <h2>Okinavan Shito Ryu Karate Do India</h2>
 
   <form method="post">
@@ -171,7 +171,7 @@
 </ul>
 
 <p style="margin-top: 15px; font-size: 1.2em; color: #d32f2f; font-weight: bold; text-align: center;">
-  Total Marks: {{ result.total }}
+  Total Marks: {{ result.total }}/80
 </p>
 
 {% if result.categories.remarks %}

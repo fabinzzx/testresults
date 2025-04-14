@@ -1,24 +1,112 @@
 {
-  "josemon": {
-    "punches": 10,
-    "kicks": 12,
+  "diya manoj": {
+    "punches": 8,
+    "kicks": 7,
     "blocks": 9,
-    "strikes": 10,
-    "katas": 14,
-    "stances": 10,
-    "fighting": 15,
-    "theory": 13,
-    "remarks": "Excellent performance, especially in fighting and katas. Keep working on block techniques."
-  },
-  "bob": {
-    "punches": 9,
-    "kicks": 10,
-    "blocks": 8,
-    "strikes": 9,
-    "katas": 12,
+    "strikes": 7,
     "stances": 9,
-    "fighting": 13,
-    "theory": 11,
-    "remarks": "Good overall, but needs improvement in blocks and theory understanding."
-  }
+    "katas": 8,
+    "fighting": 6,
+    "theory": 10,
+    "remarks": "Excellent performance, need to focus more on katas and fighting."
+  },
+  "angelina nixon": {
+    "punches": 7,
+    "kicks": 8,
+    "blocks": 7,
+    "strikes": 8,
+    "stances": 7,
+    "katas": 9,
+    "fighting": 5,
+    "theory": 4,
+    "remarks": "Good performance, Study theory portion more efficient, also lacking in katas and fighting."
+  },
+  "aadhish krishna p.s": {
+    "punches": 8,
+    "kicks": 9,
+    "blocks": 8,
+    "strikes": 7,
+    "stances": 7,
+    "katas": 7,
+    "fighting": 8,
+    "theory": 7,
+    "remarks": "Good performance,fighting skills are appreciatable, Study theory portion more efficient, also lacking in katas, some minor improvements should be made in kihons too."
+  },
+   "diya rose biju": {
+    "punches": 6,
+    "kicks": 7,
+    "blocks": 6,
+    "strikes": 7,
+    "stances": 8,
+    "katas": 6,
+    "fighting": 9,
+    "theory": 6,
+    "remarks": "Good performance, Study theory portion more efficient, also lacking in katas and fighting, some minor improvements should be made in kihons too."
+  },
+    "albert jiji": {
+    "punches": 7,
+    "kicks": 8,
+    "blocks": 7,
+    "strikes": 8,
+    "stances": 7,
+    "katas": 8,
+    "fighting": 7,
+    "theory": 8,
+    "remarks": "Good performance, lacking in katas and fighting, some minor improvements should be made in kihons too, try to be more confident in next test."
+  },
+    "anai rajesh": {
+    "punches": 6,
+    "kicks": 6,
+    "blocks": 6,
+    "strikes": 7,
+    "stances": 7,
+    "katas": 4,
+    "fighting": 6,
+    "theory": 8,
+    "remarks": "Average performance, kata performance is lacking try to study it every day, some minor improvements should be made in kihons too, try to be more confident in next test."
+  },
+   "dion biju": {
+    "punches": 8,
+    "kicks": 8,
+    "blocks": 9,
+    "strikes": 8,
+    "stances": 8,
+    "katas": 8,
+    "fighting": 8,
+    "theory": 9,
+    "remarks": "Excellent performance, do more endurance exercises to develop your stamina"
+  },
+  "shivani g.s": {
+    "punches": 8,
+    "kicks": 7,
+    "blocks": 8,
+    "strikes": 7,
+    "stances": 6,
+    "katas": 5,
+    "fighting": 9,
+    "theory": 6,
+    "remarks": "Average performance, try to be more confident and practice daily to develop your stamina and skills, poor performance in katas and taking classes, need to take class in any of the dojos other than your dojo should be fully prepared sensei will not be interfering you"
+},
+"aidan ajay": {
+    "punches": 7,
+    "kicks": 8,
+    "blocks": 7,
+    "strikes": 6,
+    "stances": 8,
+    "katas": 7,
+    "fighting": 8,
+    "theory": 7,
+    "remarks": "Good performance, try to be more confident and practice daily to develop your stamina and skills, try to study some theory everyday"
+},
+"danio stevin": {
+    "punches": 7,
+    "kicks": 7,
+    "blocks": 6,
+    "strikes": 7,
+    "stances": 7,
+    "katas": 8,
+    "fighting": 6,
+    "theory": 5,
+    "remarks": "Average performance, try to study some theory everyday, try to be more confident and practice daily to develop your stamina and skills, also sensei will be asking you theory in frequent classes so try to study and come"
+}
 }
