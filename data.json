@@ -8,7 +8,7 @@
     "katas": 8,
     "fighting": 6,
     "theory": 10,
-    "remarks": "Excellent performance, need to focus more on katas and fighting."
+    "remarks": "Excellent performance, need to focus more on katas and fighting"
   },
   "angelina nixon": {
     "punches": 7,
@@ -19,7 +19,7 @@
     "katas": 9,
     "fighting": 5,
     "theory": 4,
-    "remarks": "Good performance, Study theory portion more efficient, also lacking in katas and fighting."
+    "remarks": "Good performance, Study theory portion more efficient, also lacking in katas and fighting"
   },
   "aadhish krishna p.s": {
     "punches": 8,
@@ -30,7 +30,7 @@
     "katas": 7,
     "fighting": 8,
     "theory": 7,
-    "remarks": "Good performance,fighting skills are appreciatable, Study theory portion more efficient, also lacking in katas, some minor improvements should be made in kihons too."
+    "remarks": "Good performance,fighting skills are appreciatable, Study theory portion more efficient, also lacking in katas, some minor improvements should be made in kihons too"
   },
    "diya rose biju": {
     "punches": 6,
@@ -41,7 +41,7 @@
     "katas": 6,
     "fighting": 9,
     "theory": 6,
-    "remarks": "Good performance, Study theory portion more efficient, also lacking in katas and fighting, some minor improvements should be made in kihons too."
+    "remarks": "Good performance, Study theory portion more efficient, also lacking in katas and fighting, some minor improvements should be made in kihons too"
   },
     "albert jiji": {
     "punches": 7,
@@ -52,7 +52,7 @@
     "katas": 8,
     "fighting": 7,
     "theory": 8,
-    "remarks": "Good performance, lacking in katas and fighting, some minor improvements should be made in kihons too, try to be more confident in next test."
+    "remarks": "Good performance, lacking in katas and fighting, some minor improvements should be made in kihons too, try to be more confident in next test"
   },
     "anai rajesh": {
     "punches": 6,
@@ -63,7 +63,7 @@
     "katas": 4,
     "fighting": 6,
     "theory": 8,
-    "remarks": "Average performance, kata performance is lacking try to study it every day, some minor improvements should be made in kihons too, try to be more confident in next test."
+    "remarks": "Average performance, kata performance is lacking try to study it every day, some minor improvements should be made in kihons too, try to be more confident in next test"
   },
    "dion biju": {
     "punches": 8,
@@ -108,5 +108,16 @@
     "fighting": 6,
     "theory": 5,
     "remarks": "Average performance, try to study some theory everyday, try to be more confident and practice daily to develop your stamina and skills, also sensei will be asking you theory in frequent classes so try to study and come"
+},
+"ayana thomas": {
+    "punches": 8,
+    "kicks": 7,
+    "blocks": 8,
+    "strikes": 6,
+    "stances": 8,
+    "katas": 7,
+    "fighting": 7,
+    "theory": 8,
+    "remarks": "Good performance, try to be more confident and practice daily to develop your stamina and skills, try to study some theory everyday"
 }
 }
